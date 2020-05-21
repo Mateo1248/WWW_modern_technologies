@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    background: url("background.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: auto;
+    text-align: center; 
+    background-color: lightgray ;
+}
+
+header h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 500;
+}
+
+main {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+main h1 {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    font-size: 2em;
+    color: black;
+}
+
+main article {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 1.30em;
+    font-weight: 300;
+    color: #2c3138;
+}

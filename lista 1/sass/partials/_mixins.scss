@@ -1,0 +1,43 @@
+@import "variables";
+//==================================================
+// Domieszka dla rozmiaru i grubosci czionki
+//==================================================
+@mixin fontWeSe($weight, $size) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+//===================================================
+// Domieszka do zgenerowania zapytań medialnych
+//===================================================
+@mixin mq($canvas) {
+    @if map-has-key($breakpoints, $canvas) {
+        @media only screen and (min-width: map-get($breakpoints, $canvas)) {
+            @content;
+        }
+    }
+}
+
+//===================================================
+// Domieszka dla siatki grid
+//===================================================
+@mixin gridCon($areas, $columns, $rows) {
+    grid-template-areas: $areas;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+//===================================================
+// Domieszka margin i padding
+//===================================================
+@mixin marPad($margin:normal, $padding:normal) {
+    margin: $margin;
+    padding: $padding;
+}
+
+//===================================================
+// Funkcja dla linear gradient
+//===================================================
+@function linearGradfunc($rr, $gg) {
+    @return linear-gradient(to left, $rr 7%, $gg 94%);
+}

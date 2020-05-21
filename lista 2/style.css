@@ -1,0 +1,65 @@
+body {
+	display: grid;
+	grid-template-areas: "game" "gallery_tab";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+    text-align: center;
+	background: gray;
+	margin-left: 2%;
+    margin-right: 2%;
+}
+
+#game {
+	grid-area: game;
+}
+
+#gallery_tab {
+	grid-area: gallery_tab;
+	display: table-column;
+}
+
+#hint {
+	background: white;
+	width: 640px;
+	height: 640px;
+	border: 2px solid black;
+}
+
+#puzzleBoard {
+	background: red;
+	width: 640px;
+	height: 640px;
+	border: 2px solid black;
+}
+
+.rows12 {
+	display: inline-block;
+}
+
+.rows34 {
+	display: inline-block;
+}
+
+.gallery {
+	display: inline;	
+	border-spacing: 4px 0;
+}
+
+.gallery img {
+	width: 150px;
+	height: 130px;
+	border-radius: 5%;
+}	
+
+@media screen and (max-width: 1250px){
+
+	body {
+		width:100vw;
+		height:100vh;
+	}
+
+    #hint{
+        display: none;
+    }
+}	
